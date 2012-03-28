@@ -14,6 +14,11 @@
      *  */
     require_once dirname(__FILE__) . '/Amfphp/ClassLoader.php';
 
+	/**
+	 * amfPHP-specific configuration options
+	 */
+	Configuration::set("COLLECTION_CLASS", "flex.messaging.io.ArrayCollection");
+
     $classes = getClassesAndInfo();
 
     $config = new Amfphp_Core_Config();
