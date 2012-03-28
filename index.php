@@ -14,10 +14,7 @@
      *  */
     require_once dirname(__FILE__) . '/Amfphp/ClassLoader.php';
 
-	/**
-	 * amfPHP-specific configuration options
-	 */
-	Configuration::set("COLLECTION_CLASS", "flex.messaging.io.ArrayCollection");
+	Configuration::set("DOCTRINE_DEFAULT_HYDRATION", Aerial_Core::HYDRATE_AMF_COLLECTION);
 
     $classes = getClassesAndInfo();
 
